@@ -97,14 +97,14 @@
 
 
   <meta name="description" content="1.主题更换,以next为例首先,去GitHub选择合适的主题hexo-theme-next,复制ssh下载地址.在blogs中gitbush输入git clone 地址.(http://theme-next.iissnan.com/getting-started.html#activate-next-theme) .next主题文档其次,把下载的文件hexo-theme-next放到themes">
-<meta name="keywords" content="分享,主题更换">
+<meta name="keywords" content="主题更换,分享">
 <meta property="og:type" content="article">
 <meta property="og:title" content="主题的自主更换">
 <meta property="og:url" content="http://Love.com/2019/05/17/主题的自主更换/index.html">
 <meta property="og:site_name" content="Love">
 <meta property="og:description" content="1.主题更换,以next为例首先,去GitHub选择合适的主题hexo-theme-next,复制ssh下载地址.在blogs中gitbush输入git clone 地址.(http://theme-next.iissnan.com/getting-started.html#activate-next-theme) .next主题文档其次,把下载的文件hexo-theme-next放到themes">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-17T07:21:30.696Z">
+<meta property="og:updated_time" content="2019-05-17T07:58:09.086Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="主题的自主更换">
 <meta name="twitter:description" content="1.主题更换,以next为例首先,去GitHub选择合适的主题hexo-theme-next,复制ssh下载地址.在blogs中gitbush输入git clone 地址.(http://theme-next.iissnan.com/getting-started.html#activate-next-theme) .next主题文档其次,把下载的文件hexo-theme-next放到themes">
@@ -279,11 +279,40 @@
 
       
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
     </ul>
   
 
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -368,7 +397,7 @@
                 
               
 
-              <time title="创建时间：2019-05-17 09:27:28 / 修改时间：15:21:30" itemprop="dateCreated datePublished" datetime="2019-05-17T09:27:28+08:00">2019-05-17</time>
+              <time title="创建时间：2019-05-17 09:27:28 / 修改时间：15:58:09" itemprop="dateCreated datePublished" datetime="2019-05-17T09:27:28+08:00">2019-05-17</time>
             
 
             
@@ -419,6 +448,13 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 
           
@@ -475,6 +511,15 @@ length: 150 (这是多篇文章的统一设置).
 <h2 id="17-增加valine评论功能"><a href="#17-增加valine评论功能" class="headerlink" title="17.增加valine评论功能"></a>17.增加valine评论功能</h2><p><a href="https://valine.js.org/" target="_blank" rel="noopener">了解valine评论功能</a><br><code>Valine 诞生于2017年8月7日，是一款基于Leancloud的快速、简洁且高效的无后端评论系统。
 理论上支持但不限于静态博客，目前已有Hexo、Jekyll、Typecho、Hugo、Ghost 等博客程序在使用Valine。</code><br><a href="https://leancloud.cn/" target="_blank" rel="noopener">用valine之前先去leanClound注册,得到APPID和appkey</a></p>
 <h4 id="具体操作如下"><a href="#具体操作如下" class="headerlink" title="具体操作如下:"></a>具体操作如下:</h4><h5 id="首先去leanClound的控制台创建一个应用-在创建好的应用右上角的齿轮设置其应用key-复制id和key"><a href="#首先去leanClound的控制台创建一个应用-在创建好的应用右上角的齿轮设置其应用key-复制id和key" class="headerlink" title="首先去leanClound的控制台创建一个应用.在创建好的应用右上角的齿轮设置其应用key.复制id和key"></a>首先去leanClound的控制台创建一个应用.在创建好的应用右上角的齿轮设置其应用key.复制id和key</h5><h5 id="其次编辑器打开主题根目录下的-config-yml-找到valine-改为true-粘贴ID和key-保存"><a href="#其次编辑器打开主题根目录下的-config-yml-找到valine-改为true-粘贴ID和key-保存" class="headerlink" title="其次编辑器打开主题根目录下的_config.yml,找到valine,改为true,粘贴ID和key,保存."></a>其次编辑器打开主题根目录下的_config.yml,找到valine,改为true,粘贴ID和key,保存.</h5><h5 id="最后再执行hexo-clean-gt-hexo-g-gt-hexo-s-开启服务器测试即可-1"><a href="#最后再执行hexo-clean-gt-hexo-g-gt-hexo-s-开启服务器测试即可-1" class="headerlink" title="最后再执行hexo clean=&gt;hexo g=&gt;hexo s 开启服务器测试即可."></a>最后再执行hexo clean=&gt;hexo g=&gt;hexo s 开启服务器测试即可.</h5><h5 id="评论时的头像及其他设置-可参考valine文档-目前我选用7种非自定义图像中的wavatar"><a href="#评论时的头像及其他设置-可参考valine文档-目前我选用7种非自定义图像中的wavatar" class="headerlink" title="评论时的头像及其他设置,可参考valine文档.目前我选用7种非自定义图像中的wavatar"></a>评论时的头像及其他设置,可参考valine文档.目前我选用7种非自定义图像中的wavatar</h5><hr>
+<h2 id="18-增加搜索功能-next主题有四种-Swiftype-微搜索-Local-Search-Algolia-以Local-Search为例-其他三种相对麻烦些"><a href="#18-增加搜索功能-next主题有四种-Swiftype-微搜索-Local-Search-Algolia-以Local-Search为例-其他三种相对麻烦些" class="headerlink" title="18.增加搜索功能(next主题有四种:Swiftype/微搜索/Local Search/Algolia),以Local Search为例,其他三种相对麻烦些."></a>18.增加搜索功能(next主题有四种:Swiftype/微搜索/Local Search/Algolia),以Local Search为例,其他三种相对麻烦些.</h2><h4 id="1-安装-hexo-generator-searchdb，在博客的根目录下执行以下命令："><a href="#1-安装-hexo-generator-searchdb，在博客的根目录下执行以下命令：" class="headerlink" title="1.安装 hexo-generator-searchdb，在博客的根目录下执行以下命令："></a>1.安装 hexo-generator-searchdb，在博客的根目录下执行以下命令：</h4><pre><code>$ npm install hexo-generator-searchdb --save
+</code></pre><h4 id="2-编辑博客根目录下-config-yml，新增以下内容到任意位置："><a href="#2-编辑博客根目录下-config-yml，新增以下内容到任意位置：" class="headerlink" title="2.编辑博客根目录下_config.yml，新增以下内容到任意位置："></a>2.编辑博客根目录下_config.yml，新增以下内容到任意位置：</h4><pre><code>search:
+     path: search.xml
+     field: post
+     format: html
+     limit: 10000
+</code></pre><h4 id="3-编辑博客根目录下的-config-yml，启用本地搜索功能："><a href="#3-编辑博客根目录下的-config-yml，启用本地搜索功能：" class="headerlink" title="3.编辑博客根目录下的_config.yml，启用本地搜索功能："></a>3.编辑博客根目录下的_config.yml，启用本地搜索功能：</h4><pre><code>local_search:
+  enable: true    
+</code></pre><h4 id="4-开启服务即可"><a href="#4-开启服务即可" class="headerlink" title="4.开启服务即可."></a>4.开启服务即可.</h4><hr>
 
       
     </div>
@@ -537,11 +582,11 @@ length: 150 (这是多篇文章的统一设置).
       
         <div class="post-tags">
           
-            <a href="/tags/分享/" rel="tag">
-            <i class="fa fa-google"></i> 分享</a>
-          
             <a href="/tags/主题更换/" rel="tag">
             <i class="fa fa-google"></i> 主题更换</a>
+          
+            <a href="/tags/分享/" rel="tag">
+            <i class="fa fa-google"></i> 分享</a>
           
         </div>
       
@@ -586,7 +631,6 @@ length: 150 (这是多篇文章的统一设置).
 
   
     <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC80NDI2NS8yMDc5OA=="></div>
     </div>
 
   
@@ -770,7 +814,7 @@ length: 150 (这是多篇文章的统一设置).
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-主题更换-以next为例"><span class="nav-number">1.</span> <span class="nav-text">1.主题更换,以next为例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先-去GitHub选择合适的主题hexo-theme-next-复制ssh下载地址-在blogs中gitbush输入git-clone-地址-http-theme-next-iissnan-com-getting-started-html-activate-next-theme-next主题文档"><span class="nav-number">1.0.1.</span> <span class="nav-text">首先,去GitHub选择合适的主题hexo-theme-next,复制ssh下载地址.在blogs中gitbush输入git clone 地址.(http://theme-next.iissnan.com/getting-started.html#activate-next-theme) .next主题文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其次-把下载的文件hexo-theme-next放到themes文件夹里面去"><span class="nav-number">1.0.2.</span> <span class="nav-text">其次,把下载的文件hexo-theme-next放到themes文件夹里面去.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最后-把文件的文件名放到-config-yml配置里面去-如-theme-hexo-theme-next"><span class="nav-number">1.0.3.</span> <span class="nav-text">最后,把文件的文件名放到_config.yml配置里面去.如:theme: hexo-theme-next</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#2-更改语言为中文"><span class="nav-number">2.</span> <span class="nav-text">2.更改语言为中文</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在-config-yml的language中改为zh-Hans后-发现并没有变化-去看了hexo-theme-next主题中languages的配置-发现只有zh-CN-把zh-Hans改为zh-CN就可以了"><span class="nav-number">2.0.1.</span> <span class="nav-text">在_config.yml的language中改为zh-Hans后,发现并没有变化,去看了hexo-theme-next主题中languages的配置,发现只有zh-CN,把zh-Hans改为zh-CN就可以了.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-增加标签页和分类页"><span class="nav-number">3.</span> <span class="nav-text">3.增加标签页和分类页</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在主题hexo-theme-next的根目录中的-config-yml里-找到menu-去掉tags和categories的”-”即可"><span class="nav-number">3.0.1.</span> <span class="nav-text">在主题hexo-theme-next的根目录中的_config.yml里.找到menu.去掉tags和categories的”#”即可.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-正确打开标签页和分类页"><span class="nav-number">4.</span> <span class="nav-text">4.正确打开标签页和分类页</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#若此时打开标签页-会报错-出现一段路径-怎么正确打开呢"><span class="nav-number">4.0.1.</span> <span class="nav-text">若此时打开标签页,会报错,出现一段路径.怎么正确打开呢?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输入hexo-n-page-tags-会在source下新建tags文件-然后在tags下的index-md中修改-如"><span class="nav-number">4.0.2.</span> <span class="nav-text">输入hexo n page tags ,会在source下新建tags文件,然后在tags下的index.md中修改,如</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#title-标签-date-2019-05-17-10-29-08"><span class="nav-number">4.0.3.</span> <span class="nav-text">title: 标签 date: 2019-05-17 10:29:08</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#type-“tags”-这里要写-不然不会出现暂无标签字样"><span class="nav-number">4.0.4.</span> <span class="nav-text">type: “tags” (这里要写,不然不会出现暂无标签字样)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分类页同上-输入hexo-n-page-categories"><span class="nav-number">4.0.5.</span> <span class="nav-text">分类页同上,输入hexo n page categories</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-主题样式scheme的更改-内置了四种样式"><span class="nav-number">5.</span> <span class="nav-text">5.主题样式scheme的更改(内置了四种样式)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-更改头像"><span class="nav-number">6.</span> <span class="nav-text">6.更改头像</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先把喜欢的图像放在主题根目录下的source的images中"><span class="nav-number">6.0.1.</span> <span class="nav-text">首先把喜欢的图像放在主题根目录下的source的images中.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其次在主题的根目录中-config-yml里的avatar设置图片路径-url-images-avatar-gif"><span class="nav-number">6.0.2.</span> <span class="nav-text">其次在主题的根目录中_config.yml里的avatar设置图片路径:url: /images/avatar.gif</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-更改标题和作者"><span class="nav-number">7.</span> <span class="nav-text">7.更改标题和作者</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在博客blogs更目录下的-config-yml里的Site"><span class="nav-number">7.0.1.</span> <span class="nav-text">在博客blogs更目录下的_config.yml里的Site</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#title-Love-author-LiMing-Hu"><span class="nav-number">7.0.2.</span> <span class="nav-text">title: Love    author: LiMing Hu</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-启用侧边栏社交链接"><span class="nav-number">8.</span> <span class="nav-text">8.启用侧边栏社交链接</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在主题的根目录下的-config-yml里找到social去掉”-”设置即可"><span class="nav-number">8.0.1.</span> <span class="nav-text">在主题的根目录下的_config.yml里找到social去掉”#”设置即可.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-添加友情链接"><span class="nav-number">9.</span> <span class="nav-text">9.添加友情链接</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在主题的根目录下的-config-yml里找到Links去掉”-”设置添加链接即可"><span class="nav-number">9.0.1.</span> <span class="nav-text">在主题的根目录下的_config.yml里找到Links去掉”#”设置添加链接即可.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-开启打赏功能"><span class="nav-number">10.</span> <span class="nav-text">10.开启打赏功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在主题的根目录下的-config-yml里找到reward-settings去掉”-”设置即可-如"><span class="nav-number">10.0.1.</span> <span class="nav-text">在主题的根目录下的_config.yml里找到reward_settings去掉”#”设置即可.如:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-开启微信公众号的订阅功能"><span class="nav-number">11.</span> <span class="nav-text">11.开启微信公众号的订阅功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在主题的根目录下的-config-yml里找到wechat-subscriber去掉”-”设置即可"><span class="nav-number">11.0.1.</span> <span class="nav-text">在主题的根目录下的_config.yml里找到wechat_subscriber去掉”#”设置即可</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-设置图像为圆形可旋转"><span class="nav-number">12.</span> <span class="nav-text">12.设置图像为圆形可旋转</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在主题的根目录下的source下的css里的-common下-找到components里的sidebar-用编辑器代开sidebar-author-styl-不要用记事本-容易乱码"><span class="nav-number">12.0.1.</span> <span class="nav-text">在主题的根目录下的source下的css里的_common下,找到components里的sidebar,用编辑器代开sidebar-author.styl,(不要用记事本,容易乱码).</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-首页文章设置阅读全文"><span class="nav-number">13.</span> <span class="nav-text">13.首页文章设置阅读全文</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#两种方法-先说简单的-只需要在你的编辑器中要被截断的文字后面输入-lt-more-gt-即可-剩下的部分只有点击了”阅读全文”才出现-这是单篇文章的设置"><span class="nav-number">13.0.1.</span> <span class="nav-text">两种方法,先说简单的:只需要在你的编辑器中要被截断的文字后面输入&lt;!-- more --&gt;即可.剩下的部分只有点击了”阅读全文”才出现.(这是单篇文章的设置).</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#另外一种-在在主题的根目录下的-config-yml里找到auto-excerpt"><span class="nav-number">13.0.2.</span> <span class="nav-text">另外一种,在在主题的根目录下的_config.yml里找到auto_excerpt:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-给博客添加fork-GitHub"><span class="nav-number">14.</span> <span class="nav-text">14.给博客添加fork GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先去http-tholman-com-github-corners-上找一个喜欢的图标-复制右边的内容"><span class="nav-number">14.0.1.</span> <span class="nav-text">首先去http://tholman.com/github-corners/上找一个喜欢的图标,复制右边的内容.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其次用编辑器打开主题根目录下的layout文件下的-layout-swig"><span class="nav-number">14.0.2.</span> <span class="nav-text">其次用编辑器打开主题根目录下的layout文件下的_layout.swig.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最后找到-lt-div-class-quot-headband-quot-gt-lt-div-gt-在其后面粘贴-更改你的GitHub地址-保存"><span class="nav-number">14.0.3.</span> <span class="nav-text">最后找到&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;,在其后面粘贴.更改你的GitHub地址,保存.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#执行hexo-clean-gt-hexo-g-gt-hexo-s-开启服务器测试即可"><span class="nav-number">14.0.4.</span> <span class="nav-text">执行hexo clean=&gt;hexo g=&gt;hexo s 开启服务器测试即可.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-修改文章内链接样式"><span class="nav-number">15.</span> <span class="nav-text">15.修改文章内链接样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先是markdown的语法写出-连接变色-地址-如下-链接变色-http-www-baidu-com"><span class="nav-number">15.0.1.</span> <span class="nav-text">首先是markdown的语法写出:[连接变色](地址)如下:[链接变色](http://www.baidu.com)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其次编辑器打开source-gt-css-gt-common-gt-components-gt-post-gt-post-styl"><span class="nav-number">15.0.2.</span> <span class="nav-text">其次编辑器打开source=&gt;css=&gt;_common=&gt;components=&gt;post=&gt;post.styl</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改其内容"><span class="nav-number">15.0.3.</span> <span class="nav-text">修改其内容:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-修改文章底部带-的标签-更改图标样式"><span class="nav-number">16.</span> <span class="nav-text">16.修改文章底部带#的标签,更改图标样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先找到要修改代码的地方-用编辑器打开主题根目录下的layout下-macro里的post-swig"><span class="nav-number">16.0.1.</span> <span class="nav-text">首先找到要修改代码的地方?用编辑器打开主题根目录下的layout下_macro里的post.swig.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#搜索tag找到如下内容-lt-div-class-quot-post-tags-quot-gt-lt-a-gt-lt-a-gt-lt-div-gt-在-的这个地方写入icon调用代码-lt-i-class-quot-fa-fa-google-quot-gt-lt-i-gt-保存"><span class="nav-number">16.0.2.</span> <span class="nav-text">搜索tag找到如下内容:&lt;div class=&quot;post-tags&quot;&gt;&lt;a&gt;#&lt;/a&gt;&lt;/div&gt;在#的这个地方写入icon调用代码:&lt;i class=&quot;fa fa-google&quot;&gt;&lt;/i&gt;保存.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最后再执行hexo-clean-gt-hexo-g-gt-hexo-s-开启服务器测试即可"><span class="nav-number">16.0.3.</span> <span class="nav-text">最后再执行hexo clean=&gt;hexo g=&gt;hexo s 开启服务器测试即可.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-增加valine评论功能"><span class="nav-number">17.</span> <span class="nav-text">17.增加valine评论功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#具体操作如下"><span class="nav-number">17.0.1.</span> <span class="nav-text">具体操作如下:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#首先去leanClound的控制台创建一个应用-在创建好的应用右上角的齿轮设置其应用key-复制id和key"><span class="nav-number">17.0.1.1.</span> <span class="nav-text">首先去leanClound的控制台创建一个应用.在创建好的应用右上角的齿轮设置其应用key.复制id和key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其次编辑器打开主题根目录下的-config-yml-找到valine-改为true-粘贴ID和key-保存"><span class="nav-number">17.0.1.2.</span> <span class="nav-text">其次编辑器打开主题根目录下的_config.yml,找到valine,改为true,粘贴ID和key,保存.</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#最后再执行hexo-clean-gt-hexo-g-gt-hexo-s-开启服务器测试即可-1"><span class="nav-number">17.0.1.3.</span> <span class="nav-text">最后再执行hexo clean=&gt;hexo g=&gt;hexo s 开启服务器测试即可.</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#评论时的头像及其他设置-可参考valine文档-目前我选用7种非自定义图像中的wavatar"><span class="nav-number">17.0.1.4.</span> <span class="nav-text">评论时的头像及其他设置,可参考valine文档.目前我选用7种非自定义图像中的wavatar</span></a></li></ol></li></ol></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-主题更换-以next为例"><span class="nav-number">1.</span> <span class="nav-text">1.主题更换,以next为例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先-去GitHub选择合适的主题hexo-theme-next-复制ssh下载地址-在blogs中gitbush输入git-clone-地址-http-theme-next-iissnan-com-getting-started-html-activate-next-theme-next主题文档"><span class="nav-number">1.0.1.</span> <span class="nav-text">首先,去GitHub选择合适的主题hexo-theme-next,复制ssh下载地址.在blogs中gitbush输入git clone 地址.(http://theme-next.iissnan.com/getting-started.html#activate-next-theme) .next主题文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其次-把下载的文件hexo-theme-next放到themes文件夹里面去"><span class="nav-number">1.0.2.</span> <span class="nav-text">其次,把下载的文件hexo-theme-next放到themes文件夹里面去.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最后-把文件的文件名放到-config-yml配置里面去-如-theme-hexo-theme-next"><span class="nav-number">1.0.3.</span> <span class="nav-text">最后,把文件的文件名放到_config.yml配置里面去.如:theme: hexo-theme-next</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#2-更改语言为中文"><span class="nav-number">2.</span> <span class="nav-text">2.更改语言为中文</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在-config-yml的language中改为zh-Hans后-发现并没有变化-去看了hexo-theme-next主题中languages的配置-发现只有zh-CN-把zh-Hans改为zh-CN就可以了"><span class="nav-number">2.0.1.</span> <span class="nav-text">在_config.yml的language中改为zh-Hans后,发现并没有变化,去看了hexo-theme-next主题中languages的配置,发现只有zh-CN,把zh-Hans改为zh-CN就可以了.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-增加标签页和分类页"><span class="nav-number">3.</span> <span class="nav-text">3.增加标签页和分类页</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在主题hexo-theme-next的根目录中的-config-yml里-找到menu-去掉tags和categories的”-”即可"><span class="nav-number">3.0.1.</span> <span class="nav-text">在主题hexo-theme-next的根目录中的_config.yml里.找到menu.去掉tags和categories的”#”即可.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-正确打开标签页和分类页"><span class="nav-number">4.</span> <span class="nav-text">4.正确打开标签页和分类页</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#若此时打开标签页-会报错-出现一段路径-怎么正确打开呢"><span class="nav-number">4.0.1.</span> <span class="nav-text">若此时打开标签页,会报错,出现一段路径.怎么正确打开呢?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输入hexo-n-page-tags-会在source下新建tags文件-然后在tags下的index-md中修改-如"><span class="nav-number">4.0.2.</span> <span class="nav-text">输入hexo n page tags ,会在source下新建tags文件,然后在tags下的index.md中修改,如</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#title-标签-date-2019-05-17-10-29-08"><span class="nav-number">4.0.3.</span> <span class="nav-text">title: 标签 date: 2019-05-17 10:29:08</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#type-“tags”-这里要写-不然不会出现暂无标签字样"><span class="nav-number">4.0.4.</span> <span class="nav-text">type: “tags” (这里要写,不然不会出现暂无标签字样)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分类页同上-输入hexo-n-page-categories"><span class="nav-number">4.0.5.</span> <span class="nav-text">分类页同上,输入hexo n page categories</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-主题样式scheme的更改-内置了四种样式"><span class="nav-number">5.</span> <span class="nav-text">5.主题样式scheme的更改(内置了四种样式)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-更改头像"><span class="nav-number">6.</span> <span class="nav-text">6.更改头像</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先把喜欢的图像放在主题根目录下的source的images中"><span class="nav-number">6.0.1.</span> <span class="nav-text">首先把喜欢的图像放在主题根目录下的source的images中.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其次在主题的根目录中-config-yml里的avatar设置图片路径-url-images-avatar-gif"><span class="nav-number">6.0.2.</span> <span class="nav-text">其次在主题的根目录中_config.yml里的avatar设置图片路径:url: /images/avatar.gif</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-更改标题和作者"><span class="nav-number">7.</span> <span class="nav-text">7.更改标题和作者</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在博客blogs更目录下的-config-yml里的Site"><span class="nav-number">7.0.1.</span> <span class="nav-text">在博客blogs更目录下的_config.yml里的Site</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#title-Love-author-LiMing-Hu"><span class="nav-number">7.0.2.</span> <span class="nav-text">title: Love    author: LiMing Hu</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-启用侧边栏社交链接"><span class="nav-number">8.</span> <span class="nav-text">8.启用侧边栏社交链接</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在主题的根目录下的-config-yml里找到social去掉”-”设置即可"><span class="nav-number">8.0.1.</span> <span class="nav-text">在主题的根目录下的_config.yml里找到social去掉”#”设置即可.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-添加友情链接"><span class="nav-number">9.</span> <span class="nav-text">9.添加友情链接</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在主题的根目录下的-config-yml里找到Links去掉”-”设置添加链接即可"><span class="nav-number">9.0.1.</span> <span class="nav-text">在主题的根目录下的_config.yml里找到Links去掉”#”设置添加链接即可.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-开启打赏功能"><span class="nav-number">10.</span> <span class="nav-text">10.开启打赏功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在主题的根目录下的-config-yml里找到reward-settings去掉”-”设置即可-如"><span class="nav-number">10.0.1.</span> <span class="nav-text">在主题的根目录下的_config.yml里找到reward_settings去掉”#”设置即可.如:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-开启微信公众号的订阅功能"><span class="nav-number">11.</span> <span class="nav-text">11.开启微信公众号的订阅功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在主题的根目录下的-config-yml里找到wechat-subscriber去掉”-”设置即可"><span class="nav-number">11.0.1.</span> <span class="nav-text">在主题的根目录下的_config.yml里找到wechat_subscriber去掉”#”设置即可</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-设置图像为圆形可旋转"><span class="nav-number">12.</span> <span class="nav-text">12.设置图像为圆形可旋转</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在主题的根目录下的source下的css里的-common下-找到components里的sidebar-用编辑器代开sidebar-author-styl-不要用记事本-容易乱码"><span class="nav-number">12.0.1.</span> <span class="nav-text">在主题的根目录下的source下的css里的_common下,找到components里的sidebar,用编辑器代开sidebar-author.styl,(不要用记事本,容易乱码).</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-首页文章设置阅读全文"><span class="nav-number">13.</span> <span class="nav-text">13.首页文章设置阅读全文</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#两种方法-先说简单的-只需要在你的编辑器中要被截断的文字后面输入-lt-more-gt-即可-剩下的部分只有点击了”阅读全文”才出现-这是单篇文章的设置"><span class="nav-number">13.0.1.</span> <span class="nav-text">两种方法,先说简单的:只需要在你的编辑器中要被截断的文字后面输入&lt;!-- more --&gt;即可.剩下的部分只有点击了”阅读全文”才出现.(这是单篇文章的设置).</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#另外一种-在在主题的根目录下的-config-yml里找到auto-excerpt"><span class="nav-number">13.0.2.</span> <span class="nav-text">另外一种,在在主题的根目录下的_config.yml里找到auto_excerpt:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-给博客添加fork-GitHub"><span class="nav-number">14.</span> <span class="nav-text">14.给博客添加fork GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先去http-tholman-com-github-corners-上找一个喜欢的图标-复制右边的内容"><span class="nav-number">14.0.1.</span> <span class="nav-text">首先去http://tholman.com/github-corners/上找一个喜欢的图标,复制右边的内容.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其次用编辑器打开主题根目录下的layout文件下的-layout-swig"><span class="nav-number">14.0.2.</span> <span class="nav-text">其次用编辑器打开主题根目录下的layout文件下的_layout.swig.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最后找到-lt-div-class-quot-headband-quot-gt-lt-div-gt-在其后面粘贴-更改你的GitHub地址-保存"><span class="nav-number">14.0.3.</span> <span class="nav-text">最后找到&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;,在其后面粘贴.更改你的GitHub地址,保存.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#执行hexo-clean-gt-hexo-g-gt-hexo-s-开启服务器测试即可"><span class="nav-number">14.0.4.</span> <span class="nav-text">执行hexo clean=&gt;hexo g=&gt;hexo s 开启服务器测试即可.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-修改文章内链接样式"><span class="nav-number">15.</span> <span class="nav-text">15.修改文章内链接样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先是markdown的语法写出-连接变色-地址-如下-链接变色-http-www-baidu-com"><span class="nav-number">15.0.1.</span> <span class="nav-text">首先是markdown的语法写出:[连接变色](地址)如下:[链接变色](http://www.baidu.com)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其次编辑器打开source-gt-css-gt-common-gt-components-gt-post-gt-post-styl"><span class="nav-number">15.0.2.</span> <span class="nav-text">其次编辑器打开source=&gt;css=&gt;_common=&gt;components=&gt;post=&gt;post.styl</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改其内容"><span class="nav-number">15.0.3.</span> <span class="nav-text">修改其内容:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-修改文章底部带-的标签-更改图标样式"><span class="nav-number">16.</span> <span class="nav-text">16.修改文章底部带#的标签,更改图标样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先找到要修改代码的地方-用编辑器打开主题根目录下的layout下-macro里的post-swig"><span class="nav-number">16.0.1.</span> <span class="nav-text">首先找到要修改代码的地方?用编辑器打开主题根目录下的layout下_macro里的post.swig.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#搜索tag找到如下内容-lt-div-class-quot-post-tags-quot-gt-lt-a-gt-lt-a-gt-lt-div-gt-在-的这个地方写入icon调用代码-lt-i-class-quot-fa-fa-google-quot-gt-lt-i-gt-保存"><span class="nav-number">16.0.2.</span> <span class="nav-text">搜索tag找到如下内容:&lt;div class=&quot;post-tags&quot;&gt;&lt;a&gt;#&lt;/a&gt;&lt;/div&gt;在#的这个地方写入icon调用代码:&lt;i class=&quot;fa fa-google&quot;&gt;&lt;/i&gt;保存.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最后再执行hexo-clean-gt-hexo-g-gt-hexo-s-开启服务器测试即可"><span class="nav-number">16.0.3.</span> <span class="nav-text">最后再执行hexo clean=&gt;hexo g=&gt;hexo s 开启服务器测试即可.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-增加valine评论功能"><span class="nav-number">17.</span> <span class="nav-text">17.增加valine评论功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#具体操作如下"><span class="nav-number">17.0.1.</span> <span class="nav-text">具体操作如下:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#首先去leanClound的控制台创建一个应用-在创建好的应用右上角的齿轮设置其应用key-复制id和key"><span class="nav-number">17.0.1.1.</span> <span class="nav-text">首先去leanClound的控制台创建一个应用.在创建好的应用右上角的齿轮设置其应用key.复制id和key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其次编辑器打开主题根目录下的-config-yml-找到valine-改为true-粘贴ID和key-保存"><span class="nav-number">17.0.1.2.</span> <span class="nav-text">其次编辑器打开主题根目录下的_config.yml,找到valine,改为true,粘贴ID和key,保存.</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#最后再执行hexo-clean-gt-hexo-g-gt-hexo-s-开启服务器测试即可-1"><span class="nav-number">17.0.1.3.</span> <span class="nav-text">最后再执行hexo clean=&gt;hexo g=&gt;hexo s 开启服务器测试即可.</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#评论时的头像及其他设置-可参考valine文档-目前我选用7种非自定义图像中的wavatar"><span class="nav-number">17.0.1.4.</span> <span class="nav-text">评论时的头像及其他设置,可参考valine文档.目前我选用7种非自定义图像中的wavatar</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#18-增加搜索功能-next主题有四种-Swiftype-微搜索-Local-Search-Algolia-以Local-Search为例-其他三种相对麻烦些"><span class="nav-number">18.</span> <span class="nav-text">18.增加搜索功能(next主题有四种:Swiftype/微搜索/Local Search/Algolia),以Local Search为例,其他三种相对麻烦些.</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-安装-hexo-generator-searchdb，在博客的根目录下执行以下命令："><span class="nav-number">18.0.1.</span> <span class="nav-text">1.安装 hexo-generator-searchdb，在博客的根目录下执行以下命令：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-编辑博客根目录下-config-yml，新增以下内容到任意位置："><span class="nav-number">18.0.2.</span> <span class="nav-text">2.编辑博客根目录下_config.yml，新增以下内容到任意位置：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-编辑博客根目录下的-config-yml，启用本地搜索功能："><span class="nav-number">18.0.3.</span> <span class="nav-text">3.编辑博客根目录下的_config.yml，启用本地搜索功能：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-开启服务即可"><span class="nav-number">18.0.4.</span> <span class="nav-text">4.开启服务即可.</span></a></li></ol></li></div>
             
 
           </div>
@@ -816,7 +860,34 @@ length: 150 (这是多篇文章的统一设置).
 
 
 
+
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -958,24 +1029,329 @@ length: 150 (这是多篇文章的统一设置).
 
 
   
-    <script>
-  window.livereOptions = {
-    refer: '2019/05/17/主题的自主更换/'
-  };
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    if (typeof LivereTower === 'function') { return; }
-    j = d.createElement(s);
-    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-    j.async = true;
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
-</script>
-
-  
 
 
   
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 
